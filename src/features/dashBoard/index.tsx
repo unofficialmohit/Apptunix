@@ -1,20 +1,10 @@
-import React from "react";
 import { styled } from "@mui/material/styles";
 import { Grid, Paper } from "@mui/material";
 import PeopleIcon from "@mui/icons-material/People";
-import WysiwygIcon from "@mui/icons-material/Wysiwyg";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import InventoryIcon from "@mui/icons-material/Inventory";
 import LineChart from "../../components/LineChart";
 import PaidIcon from "@mui/icons-material/Paid";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
-import PanoramaIcon from "@mui/icons-material/Panorama";
-import RequestPageIcon from "@mui/icons-material/RequestPage";
-import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 import { useNavigate } from "react-router-dom";
-import FiberNewIcon from '@mui/icons-material/FiberNew';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
-import AddBoxIcon from '@mui/icons-material/AddBox';
 import MainContainer from "../../layout/MainContainer";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#204e33" : "#fff",
@@ -100,43 +90,43 @@ const DashBoard = () => {
       },
     ],
   };
-  const graphDownloadsData = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-    datasets: [
-      {
-        label: "Downloads",
-        data: [
-          "10",
-          "20",
-          "25",
-          "15",
-          "50",
-          "10",
-          "20",
-          "25",
-          "15",
-          "50",
-          "20",
-          "25",
-        ],
-        borderColor: "#029be0",
-        backgroundColor: "#029be0",
-      },
-    ],
-  };
+  // const graphDownloadsData = {
+  //   labels: [
+  //     "Jan",
+  //     "Feb",
+  //     "Mar",
+  //     "Apr",
+  //     "May",
+  //     "Jun",
+  //     "Jul",
+  //     "Aug",
+  //     "Sep",
+  //     "Oct",
+  //     "Nov",
+  //     "Dec",
+  //   ],
+  //   datasets: [
+  //     {
+  //       label: "Downloads",
+  //       data: [
+  //         "10",
+  //         "20",
+  //         "25",
+  //         "15",
+  //         "50",
+  //         "10",
+  //         "20",
+  //         "25",
+  //         "15",
+  //         "50",
+  //         "20",
+  //         "25",
+  //       ],
+  //       borderColor: "#029be0",
+  //       backgroundColor: "#029be0",
+  //     },
+  //   ],
+  // };
 
   const navigate = useNavigate();
 

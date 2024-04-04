@@ -1,7 +1,5 @@
-import React from 'react'
 import {Routes,Route} from "react-router-dom";
 import Pages from "./pages"
-import MainContainer from './layout/MainContainer';
 import UserDetails from './pages/users/details';
 import UsersForm from './pages/users/form/usersForm';
 const Routing = () => {

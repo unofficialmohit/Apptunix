@@ -16,7 +16,6 @@ import { ChangeEvent, useState } from "react";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import CancelIcon from "@mui/icons-material/Cancel";
 import MainContainer from "../../layout/MainContainer";
-import { Link } from "react-router-dom";
 
 const Profile = () => {
   const [image, setImage] = useState<string>("");

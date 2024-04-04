@@ -18,9 +18,6 @@ import {
   Tabs,
   Typography,
 } from "@mui/material";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import ModeEditIcon from "@mui/icons-material/ModeEdit";
-import DeleteIcon from "@mui/icons-material/Delete";
 import MainContainer from "../../../layout/MainContainer";
 import "../Users.scss";
 import {
