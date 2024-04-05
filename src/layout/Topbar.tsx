@@ -151,7 +151,7 @@ function Topbar({ handleSidebarToggle }: PropsWithoutRef<Props>) {
                   <li>
                     <figure>
                       <img
-                        src="/static/images/profile_placeholder.jpg"
+                        src="/static/images/user_placeholder.png"
                         alt=""
                       />
                     </figure>
@@ -169,7 +169,7 @@ function Topbar({ handleSidebarToggle }: PropsWithoutRef<Props>) {
                   <li>
                     <figure>
                       <img
-                        src="/static/images/profile_placeholder.jpg"
+                        src="/static/images/user_placeholder.png"
                         alt=""
                       />
                     </figure>
@@ -187,7 +187,7 @@ function Topbar({ handleSidebarToggle }: PropsWithoutRef<Props>) {
                   <li>
                     <figure>
                       <img
-                        src="/static/images/profile_placeholder.jpg"
+                        src="/static/images/user_placeholder.png"
                         alt=""
                       />
                     </figure>
