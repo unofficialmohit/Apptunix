@@ -13,8 +13,13 @@ const Routing = () => {
       <Route path='/manage-users' element={<Pages.ManageUsers/>}/>
       <Route path="/profile" element={<Pages.Profile />} />        
       <Route path="changepassword" element={<Pages.ChangePassword />} />
-        <Route path="/manage-users/details" element={<UserDetails />} />
-        <Route path="/manage-users/usersform" element={<UsersForm />} />
+      <Route path="/manage-users/details" element={<UserDetails />} />
+      <Route path="/manage-users/usersform" element={<UsersForm />} />
+      <Route path="manage-subAdmin" element={<Pages.ManageSubAdmin />} />
+      <Route path="manage-subAdmin/add" element={<Pages.AddSubAdmin />} />
+      <Route path="/cms" element={<Pages.ManageCms/>} />
+      <Route path="/faq" element={<Pages.ManageFaq/>} />
+
     </Routes>
   )
 }

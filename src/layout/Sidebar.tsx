@@ -1,21 +1,42 @@
 import {
-    Drawer,
-    Toolbar,
-    List,
-    ListItemIcon,
-    ListItemText,
-    ListItemButton,
-    Box,
-    IconButton,
-  } from "@mui/material";
-  import { useLocation, useNavigate } from "react-router-dom";
-  import CloseIcon from "@mui/icons-material/Close";
-  import DashboardIcon from "@mui/icons-material/Dashboard";
-  
-  import PeopleIcon from "@mui/icons-material/People";
-  import { SIDEBAR_WIDTH } from "../constants";
-  import { PropsWithoutRef } from "react";
-  
+  Drawer,
+  Toolbar,
+  List,
+  ListItemIcon,
+  ListItemText,
+  ListItemButton,
+  Box,
+  IconButton,
+} from "@mui/material";
+import { useLocation, useNavigate } from "react-router-dom";
+import CategoryIcon from "@mui/icons-material/Category";
+import SummarizeTwoToneIcon from "@mui/icons-material/SummarizeTwoTone";
+import CloseIcon from "@mui/icons-material/Close";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+
+import PeopleIcon from "@mui/icons-material/People";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import ChatIcon from "@mui/icons-material/Chat";
+import TodayIcon from "@mui/icons-material/Today";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+import StyleIcon from "@mui/icons-material/Style";
+import { SIDEBAR_WIDTH } from "../constants";
+
+import QuizIcon from "@mui/icons-material/Quiz";
+import ReviewsIcon from "@mui/icons-material/Reviews";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+
+import DynamicFormIcon from "@mui/icons-material/DynamicForm";
+import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
+import ViewCarouselIcon from "@mui/icons-material/ViewCarousel";
+import SettingsIcon from "@mui/icons-material/Settings";
+import CreditScoreIcon from "@mui/icons-material/CreditScore";
+import PaidIcon from "@mui/icons-material/Paid";
+import Quiz from "@mui/icons-material/Quiz";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import { PropsWithoutRef } from "react";
   interface Props {
     mobileOpen: boolean;
     handleSidebarToggle: () => void;
@@ -75,6 +96,40 @@ import {
             </ListItemIcon>
             <ListItemText className="lstitm-txt" primary="Manage Users" />
           </ListItemButton>
+
+           {/* sub-admin */}
+        <ListItemButton
+          className="lst-itm"
+          selected={location.pathname === "/manage-subAdmin"}
+          onClick={() => navigate("/manage-subAdmin")}
+        >
+          <ListItemIcon>
+            <PeopleIcon />
+          </ListItemIcon>
+          <ListItemText className="lstitm-txt" primary="Manage Sub-Admin" />
+        </ListItemButton>
+        <ListItemButton
+          className="lst-itm"
+          selected={location.pathname === "/cms"}
+          onClick={() => navigate("/cms")}
+        >
+          <ListItemIcon>
+            <SummarizeTwoToneIcon />
+          </ListItemIcon>
+          <ListItemText className="lstitm-txt" primary="Manage CMS" />
+        </ListItemButton>
+
+        <ListItemButton
+          className="lst-itm"
+          selected={location.pathname === "/faq"}
+          onClick={() => navigate("/faq")}
+        >
+          <ListItemIcon>
+            <Quiz />
+          </ListItemIcon>
+          <ListItemText className="lstitm-txt" primary="Manage FAQs" />
+        </ListItemButton>
+          
           
         </List>
       </>

@@ -1,6 +1,6 @@
 $c_primary: #8A5FF7;
-$c_secondary:  #8565d5;
-$c_btn_primary:  #7d51ec;
+$c_secondary:  #7e67b9;
+$c_btn_primary:  #9988c5;
 $c_primary_hover: #7048c1;
 $c_primary_text: #1e172d;
 $c_form_border: #1d1d1d;
@@ -49,7 +49,7 @@ body{
 
   &.btn_primary {
     color: $c_primary_text;
-    background-color:$c_primary;
+    background-color:$c_btn_primary;
 
     &:hover {
       background-color: black;
@@ -599,6 +599,7 @@ body{
   }
 
   .cards {
+    margin: 20px 20px;
     padding: 20px 20px;
     box-shadow: $shadow2;
     border-radius: 10px;
@@ -1322,7 +1323,7 @@ background-color:white;
   }
 }
 .mn_hdng {
-  color:white;
+  color:$c_primary;
 }
 
 .App-link {
